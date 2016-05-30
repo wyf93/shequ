@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Home</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./css/app.css">
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="WM" ng-controller="waimaiCtrl">
+<nav class="navbar navbar-inverse">
+	<div class="navbar-left back"><i class="glyphicon glyphicon-chevron-left"></i></div>
+	<div class="navbar-center">商家</div>
+	<div class="navbar-right"><a href="./address.html">地址</a></div>
+</nav>
+<div class="container">
+	<div class="media" ng-repeat="x in shop">
+		<a href="./menu.html?id={{x.ID}}">
+			<div class="media-left">
+				<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="./img/1.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">{{x.name}}</h4>
+			</div>
+		</a>
+	</div>
+	<!-- <div class="media">
+		<a href="./menu.html">
+			<div class="media-left">
+				<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="./img/1.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">巴西烤肉养贤府</h4>
+			</div>
+		</a>
+	</div>
+	<div class="media">
+		<a href="">
+			<div class="media-left">
+				<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="./img/1.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">巴西烤肉养贤府</h4>
+			</div>
+		</a>
+	</div>
+	<div class="media">
+		<a href="">
+			<div class="media-left">
+				<img class="media-object" data-src="holder.js/64x64" alt="64x64" src="./img/1.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">巴西烤肉养贤府</h4>
+			</div>
+		</a>
+	</div> -->
+</div>
+<script>
+	$(function () {
+		$('.back').click(function () {
+			back();
+		});
+	});
+	function back() {
+		history.back();
+	}
+</script>
+<script>
+	var app = angular.module('WM',[]);
+	app.controller('waimaiCtrl', function ($scope, $http) {
+		$http.get('./api/shop.json')
+			 .success(function (response) {
+			 	$scope.shop = response.shop;
+			 });
+	});
+
+</script>
+</body>
+</html>

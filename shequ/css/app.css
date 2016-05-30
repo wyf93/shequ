@@ -1,0 +1,279 @@
+body {
+  background-color: #e5e9ea;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.container {
+  padding: 0;
+  background-color: #fff;
+}
+.navbar {
+  border-radius: 0!important;
+  margin-bottom: 0;
+}
+.navbar .navbar-left {
+  color: #fff;
+  float: left;
+  line-height: 50px;
+  padding-left: 10px;
+  width: 40px;
+  position: absolute;
+  z-index: 10;
+}
+.navbar .navbar-left i {
+  font-size: 18px;
+}
+.navbar .navbar-right {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.navbar .navbar-right a {
+  color: #fff;
+}
+.navbar-center {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+}
+.media {
+  border-bottom: 1px solid #dde0e1;
+  margin-top: 0;
+  position: relative;
+}
+.media:first-child {
+  border-top: 1px solid #dde0e1;
+}
+.media .media-heading {
+  padding-top: 5px;
+}
+.media .price {
+  color: red;
+}
+.media .choose {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  height: 30px;
+}
+.media .choose span {
+  display: block;
+  float: right;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #f7d61d;
+}
+.media .choose span.reduce {
+  display: none;
+}
+.media .choose span.num {
+  color: #000;
+  border: 0;
+}
+.media .choose span.add {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu {
+  margin-top: 20px;
+  border-top: 1px solid #dde0e1;
+  background-color: #fff;
+  overflow: hidden;
+}
+.menu .col-xs-6 {
+  text-align: center;
+  height: 100px;
+  border-right: 1px solid #dde0e1;
+  border-bottom: 1px solid #dde0e1;
+  font-size: 16px;
+}
+.menu .col-xs-6 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+.menu .col-xs-6.waimai {
+  background: url('../img/waimai.jpg') center 10px no-repeat;
+}
+.menu .col-xs-6.jiazheng {
+  background: url('../img/jiazheng.jpg') center 10px no-repeat;
+}
+.menu .col-xs-6.yuyin {
+  background: url('../img/yuyin.jpg') center 10px no-repeat;
+}
+.menu .col-xs-6.shipin {
+  background: url('../img/shipin.jpg') center 10px no-repeat;
+}
+.menu .col-xs-6.tongzhi {
+  background: url('../img/tongzhi.jpg') center 10px no-repeat;
+}
+.tabbar {
+  background-color: #fff;
+}
+.tabbar .tab {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.tabbar .tab:first-child {
+  border-right: 1px solid #e5e5e5;
+}
+.tabbar .tab.active {
+  border-bottom: 2px solid #f00819;
+}
+.content {
+  backgrouond: #fff;
+  padding: 10px;
+}
+.content .content2 {
+  display: none;
+}
+.jiazheng-list {
+  font-size: 20px;
+}
+.jiazheng-list a {
+  color: #000;
+  position: relative;
+}
+.jiazheng-list a span {
+  color: blue;
+  position: absolute;
+  right: 10px;
+}
+.jiazheng-list a span i {
+  margin-left: 10px;
+  color: green;
+}
+.banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bill-fixed {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+}
+.bill-fixed .bill-left {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 60px;
+}
+.bill-fixed .bill-left span {
+  position: absolute;
+  font-size: 22px;
+  left: 10px;
+}
+.bill-fixed .bill-left .bill {
+  color: red;
+  font-size: 18px;
+}
+.bill-fixed .bill-right {
+  float: right;
+}
+.bill-fixed .bill-right a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  width: 120px;
+  text-align: center;
+  background-color: #f7d61d;
+  color: #442b21;
+}
+.list-group {
+  list-style: none;
+}
+.list-group li {
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px;
+}
+.list-group li .item-title {
+  float: left;
+  line-height: 30px;
+  margin-right: 20px;
+}
+.list-group li .item-input {
+  float: left;
+}
+.list-group li .item-input input {
+  border: 0;
+  outline: none;
+  height: 30px;
+}
+.block-title {
+  padding: 10px;
+}
+.btn-container {
+  width: 100%;
+}
+.button {
+  display: block;
+  background-color: #f7d61d;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.address-block {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-bottom: 1px solid #ccc;
+}
+.address-block .addr-top {
+  overflow: hidden;
+  color: #ccc;
+}
+.address-block .addr-top .name {
+  float: left;
+  margin-right: 20px;
+}
+.address-block .addr-top .number {
+  float: left;
+}
+.address-block .addr-btm {
+  margin-top: 5px;
+}
+.fixed-btm {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.fixed-btm p {
+  line-height: 40px;
+  text-align: center;
+}
+.fixed-btm p i {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #f7d61d;
+  font-size: 16px;
+  margin-right: 5px;
+}

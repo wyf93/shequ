@@ -1,0 +1,282 @@
+body {
+	background-color: #e5e9ea;
+}
+a {
+	color: #333;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.container {
+	padding: 0;
+	background-color: #fff;
+}
+.navbar {
+	border-radius: 0!important;
+	.navbar-left {
+		color: #fff;
+		float: left;
+		line-height: 50px;
+		padding-left: 10px;
+		width: 40px;
+		position: absolute;
+		z-index: 10;
+		i {
+			font-size: 18px;
+		}
+	}
+	margin-bottom: 0;
+	.navbar-right {
+		position: absolute;
+		right: 10px;
+		top: 15px;
+		a {
+			color: #fff;
+		}
+	}
+}
+.navbar-center {
+	color: #fff;
+	text-align:center;
+	font-size: 20px;
+	line-height: 50px;
+	// position:relative;
+	// left: -20px;
+}
+
+.media {
+	border-bottom: 1px solid #dde0e1;
+	margin-top: 0;
+	position: relative;
+	&:first-child {
+		border-top: 1px solid #dde0e1;
+	}
+	.media-heading {
+		padding-top: 5px;
+	}
+	.price {
+		color: red;
+	}
+	.choose {
+		position:absolute;
+		top: 18px;
+		right:10px;
+		height: 30px;
+		span {
+			display: block;
+			float:right;
+			line-height: 30px;
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			text-align: center;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			color: #f7d61d;
+			&.reduce {
+				display: none;
+			}
+			&.num {
+				color: #000;
+				border:0;
+			}
+			&.add {
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+.menu {
+	margin-top: 20px;
+	border-top: 1px solid #dde0e1;
+	background-color: #fff;
+	overflow: hidden;
+	.col-xs-6 {
+		text-align:center;
+		height: 100px;
+		border-right: 1px solid #dde0e1;
+		border-bottom: 1px solid #dde0e1;
+		font-size: 16px;
+		a {
+			display:block;
+			width:100%;
+			height:100%;
+			padding-top:70px;
+		}
+		&.waimai {
+			background: url('../img/waimai.jpg') center 10px no-repeat;
+		}
+		&.jiazheng {
+			background: url('../img/jiazheng.jpg') center 10px no-repeat;
+		}
+		&.yuyin {
+			background: url('../img/yuyin.jpg') center 10px no-repeat;
+		}
+		&.shipin {
+			background: url('../img/shipin.jpg') center 10px no-repeat;
+		}
+		&.tongzhi {
+			background: url('../img/tongzhi.jpg') center 10px no-repeat;
+		}
+	}
+}
+.tabbar {
+	background-color: #fff;
+	.tab {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 18px;
+		&:first-child {
+			border-right: 1px solid #e5e5e5;
+		}
+		&.active {
+			border-bottom: 2px solid #f00819;
+		}
+	}
+}
+.content {
+	backgrouond: #fff;
+	padding: 10px;
+	.content2 {
+		display: none;
+	}
+}
+.jiazheng-list {
+	font-size: 20px;
+	a {
+		color: #000;
+		position:relative;
+		span {
+			color: blue;
+			position:absolute;
+			right: 10px;
+			i {
+				margin-left:10px;
+				color: green;
+			}
+		}
+	}
+}
+.banner {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.bill-fixed {
+	position: fixed;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #fff;
+	.bill-left {
+		float: left;
+		height: 60px;
+		line-height: 60px;
+		padding-left: 60px;
+		span {
+			position: absolute;
+			font-size: 22px;
+			left: 10px;
+		}
+		.bill {
+			color: red;
+			font-size: 18px;
+		}
+	}
+	.bill-right {
+		float: right;
+		a {
+			display:block;
+			height: 60px;
+			line-height: 60px;
+			width: 120px;
+			text-align: center;
+			background-color: #f7d61d;
+			color: #442b21;
+		}
+	}
+}
+.list-group {
+	list-style: none;
+	li {
+		overflow: hidden;
+		background-color: #fff;
+		border-bottom: 1px solid #eeeeee;
+		padding: 10px;
+		.item-title {
+			float: left;
+			line-height: 30px;
+			margin-right: 20px;
+		}
+		.item-input {
+			float: left;
+			input {
+				border: 0;
+				outline: none;
+				height: 30px;
+			}
+		}
+	}
+}
+.block-title {
+	padding: 10px;
+}
+.btn-container {
+	width: 100%;
+}
+.button {
+	display: block;
+	background-color: #f7d61d;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+.address-block {
+	padding: 10px;
+	background-color: #fff;
+	font-size: 16px;
+	margin-bottom: 1px solid #ccc;
+	.addr-top {
+		overflow: hidden;
+		color: #ccc;
+
+		.name {
+			float: left;
+			margin-right: 20px;
+		}
+		.number {
+			float: left;
+		}
+	}
+	.addr-btm {
+		margin-top: 5px;
+	}
+}
+.fixed-btm {
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	p {
+		line-height: 40px;
+		text-align: center;
+		i {
+			width: 20px;
+			height: 20px;
+			transform: rotate(45deg);
+			color: #f7d61d;
+			font-size: 16px;
+			margin-right: 5px;
+		}
+		
+	}
+}
